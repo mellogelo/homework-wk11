@@ -1,4 +1,3 @@
-var express = require("express");
 var notes = require("../db/notes.js");
 
 module.exports = function(app) {
