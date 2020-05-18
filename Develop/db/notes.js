@@ -33,7 +33,7 @@ class Notes {
         const newNote = { title, text, id: ++this.idNum }
         return this.getNotes()
         .then(notes => [...notes, newNote])
-        .then(uodateNotes => this.write(updateNotes))
+        .then(updateNotes => this.write(updateNotes))
         .then(() => newNote)
     }
     // remove note
