@@ -11,6 +11,9 @@ class Notes {
     read() {
         return readFileAsync("db/db.json", JSON.stringify(note))
     }
+    write(note) {
+        return writeFileAsync("db/db.json", JSON.stringify(note))
+    }
     // get notes
     getNotes() {
         return this.read().then(notes => {
